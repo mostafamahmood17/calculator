@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+
+   
+    table{
+        width:200px;
+        height:300px;
+        margin: 150px auto;
+       
+    }
+    td{
+       
+        font-size: 2rem;
+        cursor: pointer;
+        
+
+    }
+    .btn{
+        width:100%;
+    }
+    
+    input{
+        height:50px;
+        width:100%;
+        font-size: 2rem;
+    }
+    .button{
+        width:100%;
+    }
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+   
+    
+</style>
+</head>
+<body class="bg-dark">
+ <form name="form" class="form">
+   <table class="border shadow p-3 mb-5 bg-light ">
+                <tr>
+                    <th colspan="4" class="text-center">
+                        Calculator
+                    </th>
+                </tr>
+                
+                <tr>
+                   <td colspan="4">
+                    <input name="textview" class="bg-secondary text-right" type="number" value="">               
+                   </td>
+               </tr>
+            
+           <div>
+               <tr>
+                   <td><input onclick="insert(1)" type="button"  value = "1" class="btn btn-dark"></td>
+                   <td><input onclick="insert(2)" type="button"  value = "2" class="btn btn-dark"></td>
+                   <td><input onclick="insert(3)" type="button" value = "3" class="btn btn-dark"></td>
+                   <td><input onclick="insert('/')" type="button" value = "/" class="btn btn-dark"></td>
+               </tr>
+               <tr>
+                   <td><input onclick="insert(4)" type="button" value = "4" class="btn btn-dark"></td>
+                   <td><input onclick="insert(5)" type="button" value = "5" class="btn btn-dark"></td>
+                   <td><input onclick="insert(6)" type="button" value = "6" class="btn btn-dark"></td>
+                   <td><input onclick="insert('*')" type="button" value = "*" class="btn btn-dark"></td>
+               </tr>
+               <tr>
+                   <td><input onclick="insert(7)" type="button" value = "7" class="btn btn-dark"></td>
+                   <td><input onclick="insert(8)" type="button" value = "8" class="btn btn-dark"></td>
+                   <td><input onclick="insert(9)" type="button" value = "9" class="btn btn-dark"></td>
+                   <td><input onclick="insert('-')" type="button" value = "-" class="btn btn-dark"></td>
+               </tr>
+               <tr>
+                   <td><input onclick="clean()" type="button" value = "C" class="btn btn-dark"></td>
+                   <td><input onclick="insert(0)" type="button" value = "0" class="btn btn-dark"></td>
+                   <td><input onclick="insert('.')" type="button" value = "." class="btn btn-dark"></td>
+                   <td><input onclick="insert('+')" type="button" value = "+" class="btn btn-dark"></td>
+               </tr>
+               <tr>
+                <td colspan="4"><input onclick="equal()" type="button" value = "=" class="btn btn-dark button"></td>
+            </tr>
+           
+            </div>
+   </table>
+
+</form>
+    
+  <script type="text/javascript" src="calculator.js">
+      
+  </script>
+</body>
+</html>
